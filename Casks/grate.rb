@@ -11,7 +11,7 @@ cask "grate" do
     end
     if Hardware::CPU.intel?
       url "https://github.com/erikbra/grate/releases/download/#{version}/grate-osx-x64-self-contained-#{version}.zip"
-      sha256 "cb3f796626c3c70b4333a3f8e34736aa46252ff01bd058b661e0887eb61e0fcf"
+      sha256 "7a01f633ceee53a0ff8dabcefa042a5bb67c66a48ba945cdb40c90ad008e7779"
     end
 
     binary "grate"
