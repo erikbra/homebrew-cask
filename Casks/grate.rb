@@ -7,7 +7,7 @@ cask "grate" do
 
     if Hardware::CPU.arm?
       url "https://github.com/erikbra/grate/releases/download/#{version}/grate-osx.13-arm64-self-contained-#{version}.zip"
-      sha256 "d7c412d654d156d8d3ad03d2732a67fb7367c7be7a03ebf558885fad86dbb48"
+      sha256 "0d7c412d654d156d8d3ad03d2732a67fb7367c7be7a03ebf558885fad86dbb48"
     end
     if Hardware::CPU.intel?
       url "https://github.com/erikbra/grate/releases/download/#{version}/grate-osx-x64-self-contained-#{version}.zip"
