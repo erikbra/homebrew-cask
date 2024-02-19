@@ -1,5 +1,5 @@
 cask "grate" do
-    version "1.6.0"
+    version "1.6.1"
 
     name "grate"
     desc "grate - the SQL scripts migration runner"
@@ -7,11 +7,11 @@ cask "grate" do
 
     if Hardware::CPU.arm?
       url "https://github.com/erikbra/grate/releases/download/#{version}/grate-osx-arm64-self-contained-#{version}.zip"
-      sha256 "831781a95cd38b84cc803d1bcc21110ecc9324af606cf0c7f58859f5527b6632"
+      sha256 "5b4c0b754924642e5edd4a87d48e64303be3af3dec824c371ec5b567aca3cdae"
     end
     if Hardware::CPU.intel?
       url "https://github.com/erikbra/grate/releases/download/#{version}/grate-osx-x64-self-contained-#{version}.zip"
-      sha256 "c0688aec0e49bba492f3b1b90ff9206c801d6c5700d98c4b80eb348a0aa8b64c"
+      sha256 "a6d1489e03262b97e7d10fb95d8fa426936dd6006580925feb7ac76987a83ff9"
     end
 
     binary "grate"
