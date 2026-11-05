@@ -1,19 +1,14 @@
 cask "grate" do
-    version "1.8.0"
+  arch arm: "arm64", intel: "x64"
 
-    name "grate"
-    desc "grate - the SQL scripts migration runner"
-    homepage "https://erikbra.github.io/grate/"
+  version "2.2.0"
+  sha256 arm:   "e398b3e7583fc92ca8bbd403d29ee84e9ff47edfea8233662865b2766ef09857",
+         intel: "4b9d98adff0744b83021db5b83567a4fd89afd57ff13415f483713037ff35cf5"
 
-    if Hardware::CPU.arm?
-      url "https://github.com/erikbra/grate/releases/download/#{version}/grate-osx-arm64-self-contained-#{version}.zip"
-      sha256 "d0465592555c90207f7b48984c8b330bd055c618646172d4c7f15a48d254ea05"
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/erikbra/grate/releases/download/#{version}/grate-osx-x64-self-contained-#{version}.zip"
-      sha256 "7e14283ee5a97c81e8104aca32367d5f817a1b072caef101e16f9af94cfcb37e"
-    end
+  url "https://github.com/grate-devs/grate/releases/download/#{version}/grate-osx-#{arch}-self-contained-#{version}.zip"
+  name "grate"
+  desc "SQL scripts migration runner"
+  homepage "https://grate-devs.github.io/grate/"
 
-    binary "grate"
-
+  binary "grate"
 end
